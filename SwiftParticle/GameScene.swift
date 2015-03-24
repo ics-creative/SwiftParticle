@@ -10,6 +10,8 @@ import SpriteKit
 class GameScene: SKScene {
     /** パーティクル発生装置 */
     var particleEmitter:SKEmitterNode = SKEmitterNode(fileNamed: "MyParticle.sks");
+    var smokeParticleEmitter:SKEmitterNode = SKEmitterNode(fileNamed: "MyParticle2.sks");
+
     /** 発生装置の現在地 */
     var currentPoint:CGPoint = CGPoint(x: 0, y: 0);
     /** 発生装置の目的地 */
@@ -26,6 +28,7 @@ class GameScene: SKScene {
         self.backgroundColor = UIColor(red: 0.01, green: 0.01, blue: 0.1, alpha: 1);
         // パーティクル発生装置を配置
         addChild(particleEmitter);
+        addChild(smokeParticleEmitter);
     }
     
     /**
@@ -33,21 +36,22 @@ class GameScene: SKScene {
     */
     override func update(currentTime: CFTimeInterval) -> Void
     {
-        // パーティクルの発生位置をタッチ位置まで徐々に近づける処理
         let difX:CGFloat = goalPoint.x - currentPoint.x;
         let difY:CGFloat = goalPoint.y - currentPoint.y;
-        currentPoint.x += difX * 0.1;
-        currentPoint.y += difY * 0.1;
+        currentPoint.x += difX * 0.9;
+        currentPoint.y += difY * 0.9;
         particleEmitter.particlePosition = currentPoint;
+        smokeParticleEmitter.particlePosition = currentPoint;
         
-        // 時間の経過とともにパーティクルの色相を変化させる処理
-        hue += 0.006;
+        hue += 0.004;
         if(hue > 1)
         {
             hue = 0;
         }
+        
         let color:UIColor = UIColor(hue: hue, saturation: s, brightness: v, alpha:a);
         particleEmitter.particleColor = color;
+        smokeParticleEmitter.particleColor = color;
     }
     
     /**
@@ -65,14 +69,18 @@ class GameScene: SKScene {
     }
     
     /**
+    タッチを終えたときに実行される関数
+    */
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        
+    }
+    
+    /**
     タッチ開始、タッチ移動の時の処理
     */
     func touchHandler(touches: NSSet) -> Void {
-        // タッチ情報を取得
         for touch in touches {
-            // タッチした位置を取得
             var location = touch.locationInNode(self);
-            // パーティクルの発生位置の目的地として指定
             goalPoint = location;
         }
     }

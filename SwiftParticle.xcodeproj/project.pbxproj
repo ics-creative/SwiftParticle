@@ -16,8 +16,9 @@
 		1C0EBD2A1AC17B97002341CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0EBD281AC17B97002341CC /* LaunchScreen.xib */; };
 		1C0EBD361AC17B97002341CC /* SwiftParticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0EBD351AC17B97002341CC /* SwiftParticleTests.swift */; };
 		1C0EBD401AC17BB0002341CC /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0EBD3F1AC17BB0002341CC /* star.png */; };
-		1C0EBD441AC17C2E002341CC /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C0EBD431AC17C2E002341CC /* MyParticle.sks */; };
-		1CC57E511AC17DEC00E89A49 /* MyParticleForDevice.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1CC57E501AC17DEC00E89A49 /* MyParticleForDevice.sks */; };
+		A19E67671AC1E1A9006A0BA7 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = A19E67661AC1E1A9006A0BA7 /* MyParticle.sks */; };
+		A19E676B1AC1E557006A0BA7 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A19E67691AC1E557006A0BA7 /* spark.png */; };
+		A19E676D1AC1E904006A0BA7 /* MyParticle2.sks in Resources */ = {isa = PBXBuildFile; fileRef = A19E676C1AC1E904006A0BA7 /* MyParticle2.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +45,9 @@
 		1C0EBD341AC17B97002341CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0EBD351AC17B97002341CC /* SwiftParticleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftParticleTests.swift; sourceTree = "<group>"; };
 		1C0EBD3F1AC17BB0002341CC /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		1C0EBD431AC17C2E002341CC /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
-		1CC57E501AC17DEC00E89A49 /* MyParticleForDevice.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticleForDevice.sks; sourceTree = "<group>"; };
+		A19E67661AC1E1A9006A0BA7 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		A19E67691AC1E557006A0BA7 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		A19E676C1AC1E904006A0BA7 /* MyParticle2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle2.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +89,9 @@
 		1C0EBD181AC17B96002341CC /* SwiftParticle */ = {
 			isa = PBXGroup;
 			children = (
-				1C0EBD431AC17C2E002341CC /* MyParticle.sks */,
-				1CC57E501AC17DEC00E89A49 /* MyParticleForDevice.sks */,
+				A19E67661AC1E1A9006A0BA7 /* MyParticle.sks */,
+				A19E676C1AC1E904006A0BA7 /* MyParticle2.sks */,
+				A19E67691AC1E557006A0BA7 /* spark.png */,
 				1C0EBD1B1AC17B96002341CC /* AppDelegate.swift */,
 				1C0EBD1D1AC17B96002341CC /* GameScene.sks */,
 				1C0EBD1F1AC17B96002341CC /* GameScene.swift */,
@@ -208,12 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C0EBD2A1AC17B97002341CC /* LaunchScreen.xib in Resources */,
+				A19E676B1AC1E557006A0BA7 /* spark.png in Resources */,
 				1C0EBD401AC17BB0002341CC /* star.png in Resources */,
+				A19E676D1AC1E904006A0BA7 /* MyParticle2.sks in Resources */,
 				1C0EBD271AC17B97002341CC /* Images.xcassets in Resources */,
 				1C0EBD1E1AC17B96002341CC /* GameScene.sks in Resources */,
+				A19E67671AC1E1A9006A0BA7 /* MyParticle.sks in Resources */,
 				1C0EBD251AC17B97002341CC /* Main.storyboard in Resources */,
-				1C0EBD441AC17C2E002341CC /* MyParticle.sks in Resources */,
-				1CC57E511AC17DEC00E89A49 /* MyParticleForDevice.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
