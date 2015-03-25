@@ -16,9 +16,9 @@
 		1C0EBD2A1AC17B97002341CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0EBD281AC17B97002341CC /* LaunchScreen.xib */; };
 		1C0EBD361AC17B97002341CC /* SwiftParticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0EBD351AC17B97002341CC /* SwiftParticleTests.swift */; };
 		1C0EBD401AC17BB0002341CC /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0EBD3F1AC17BB0002341CC /* star.png */; };
+		1CDBB52D1AC2BCE400CD5DC8 /* MySmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1CDBB52C1AC2BCE400CD5DC8 /* MySmoke.sks */; };
 		A19E67671AC1E1A9006A0BA7 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = A19E67661AC1E1A9006A0BA7 /* MyParticle.sks */; };
 		A19E676B1AC1E557006A0BA7 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A19E67691AC1E557006A0BA7 /* spark.png */; };
-		A19E676D1AC1E904006A0BA7 /* MyParticle2.sks in Resources */ = {isa = PBXBuildFile; fileRef = A19E676C1AC1E904006A0BA7 /* MyParticle2.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,9 @@
 		1C0EBD341AC17B97002341CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0EBD351AC17B97002341CC /* SwiftParticleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftParticleTests.swift; sourceTree = "<group>"; };
 		1C0EBD3F1AC17BB0002341CC /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		1CDBB52C1AC2BCE400CD5DC8 /* MySmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MySmoke.sks; sourceTree = "<group>"; };
 		A19E67661AC1E1A9006A0BA7 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		A19E67691AC1E557006A0BA7 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		A19E676C1AC1E904006A0BA7 /* MyParticle2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle2.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				A19E67661AC1E1A9006A0BA7 /* MyParticle.sks */,
-				A19E676C1AC1E904006A0BA7 /* MyParticle2.sks */,
+				1CDBB52C1AC2BCE400CD5DC8 /* MySmoke.sks */,
 				A19E67691AC1E557006A0BA7 /* spark.png */,
 				1C0EBD1B1AC17B96002341CC /* AppDelegate.swift */,
 				1C0EBD1D1AC17B96002341CC /* GameScene.sks */,
@@ -213,11 +213,11 @@
 				1C0EBD2A1AC17B97002341CC /* LaunchScreen.xib in Resources */,
 				A19E676B1AC1E557006A0BA7 /* spark.png in Resources */,
 				1C0EBD401AC17BB0002341CC /* star.png in Resources */,
-				A19E676D1AC1E904006A0BA7 /* MyParticle2.sks in Resources */,
 				1C0EBD271AC17B97002341CC /* Images.xcassets in Resources */,
 				1C0EBD1E1AC17B96002341CC /* GameScene.sks in Resources */,
 				A19E67671AC1E1A9006A0BA7 /* MyParticle.sks in Resources */,
 				1C0EBD251AC17B97002341CC /* Main.storyboard in Resources */,
+				1CDBB52D1AC2BCE400CD5DC8 /* MySmoke.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
