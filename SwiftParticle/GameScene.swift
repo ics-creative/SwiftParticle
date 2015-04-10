@@ -43,11 +43,11 @@ class GameScene: SKScene {
             var copiedEmmiter:SKEmitterNode!;
             if(i < EMITTER_NUM - SMOKE_EMMITER_NUM)
             {
-                copiedEmmiter = particleEmitter.copy() as SKEmitterNode;
+                copiedEmmiter = particleEmitter.copy() as! SKEmitterNode;
             }
             else
             {
-                copiedEmmiter = smokeEmitter.copy() as SKEmitterNode;
+                copiedEmmiter = smokeEmitter.copy() as! SKEmitterNode;
             }
             emmiterSet.append(copiedEmmiter);
             // 作成したパーティクル発生装置を画面に配置
@@ -87,9 +87,9 @@ class GameScene: SKScene {
     /**
     タッチが開始したときに実行される関数
     */
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         changeEmmitPointHandler(touches);
-        var touchedCount:Int = touches.allObjects.count;
+        var touchedCount:Int = touches.count;
         touchCount = touchedCount;
         touchesCountChangeHandler();
     }
@@ -97,15 +97,15 @@ class GameScene: SKScene {
     /**
     タッチが移動したときに実行される関数
     */
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         changeEmmitPointHandler(touches);
     }
     
     /**
     タッチを終えたときに実行される関数
     */
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        var touchEndCount:Int = touches.allObjects.count;
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touchEndCount:Int = touches.count;
         touchCount = touchCount - touchEndCount;
         touchesCountChangeHandler();
     }
@@ -113,9 +113,10 @@ class GameScene: SKScene {
     /**
     パーティクルの発生位置を変更する関数
     */
-    func changeEmmitPointHandler(touches: NSSet) {
-        for touch in touches {
-            var location = touch.locationInNode(self);
+    func changeEmmitPointHandler(touches: Set<NSObject>) {
+        for touch:NSObject in touches {
+            var uiTouch:UITouch = touch as! UITouch;
+            var location = uiTouch.locationInNode(self);
             emmitPoint = location;
         }
     }
